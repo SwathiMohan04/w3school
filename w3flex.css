@@ -14,7 +14,7 @@ header {
 }
 
 .left {
-    display: table;
+    display: flex;
 
 }
 
@@ -24,18 +24,23 @@ header {
 
 .logo {
     color: #04AA6D;
-    padding: 10px;
-    align-self: stretch;
-    display: table-cell;
-    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .flex-item {
-    align-self: stretch;
-    margin: 10px;
-    padding: 10px;
-    display: table-cell;
-    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
 }
 
 .flex-item:hover {
@@ -107,39 +112,41 @@ nav {
 }
 
 .navleft {
-    display: table;
+    display: flex;
     font-size: 17px;
     margin: 0;
 }
 
 .navleft-item {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
-    display: table-cell;
-    vertical-align: middle;
-    align-self: stretch;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 
 }
 
-.navleft>active {
+.navleft>.active {
     background-color: #04AA6D;
 
 }
 
 .navright {
-    display: table;
+    display: flex;
     margin: 0;
     margin-right: 20px;
 }
 
 .navright-item {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     box-sizing: border-box;
-    display: table-cell;
-    vertical-align: middle;
-    align-self: stretch;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .fa-search {
@@ -158,13 +165,6 @@ ul {
     padding-inline-start: 0px;
 }
 
-main {
-    position: relative;
-    left: 218px;
-    width: calc(100vw - 400px);
-    margin: 10px;
-
-}
 
 aside {
     position: fixed;
@@ -206,10 +206,10 @@ h2 {
 }
 
 article {
-    /* position: relative;
+    position: relative;
     left: 218px;
-    width: 80%;
-    margin: 10px; */
+    width: calc(100vw - 400px);
+    margin: 10px;
 }
 
 article>h1 {
